@@ -1,0 +1,22 @@
+from enum import Enum
+
+class PieceType(Enum):
+    SIDES = "COSTADO"
+    TOPS = "TAPA"
+    BASES = "BANCA"
+    TOE_KICK = "ZOCALO"
+    UPPER_MOLDING = "MOLDURA SUPERIOR"
+    LOWER_MOLDING = "MOLDURA INFERIOR"
+    SHELVES = "ENTREPAÑO"
+    STRETCHERS = "ARMADOR"
+    DOORS = "PUERTAS"
+    DRAWER_FRONTS = "FRENTE DE GAVETA"
+    RAILS = "FAJA"
+    FRAMES = "MARCO"
+    BACK_PANELS = "RESPALDO"
+    DRAWER_BOTTOMS = "FONDO DE GAVETA"
+    COUNTERTOP = "TOP"
+    BACKSPLASH = "SALPICADERA"
+
+    def __str__(self):
+        return self.value
